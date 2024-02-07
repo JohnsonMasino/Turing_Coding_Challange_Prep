@@ -12,7 +12,7 @@ def say_age():
     try:
         birth_year = input("Now tell us the year you were born: ")
         current_year = datetime.now().year
-        age = current_year - int(birth_year)
+        age = int(current_year) - int(birth_year)
         message = f"Wow, you are {age} years old."
         print(message)
     except ValueError:
